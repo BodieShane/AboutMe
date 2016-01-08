@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--StartScreen-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="StartScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="AboutMe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9z-qV-DLM">
+                                <rect key="frame" x="156" y="411" width="103" height="53"/>
+                                <state key="normal" title="Games "/>
+                                <connections>
+                                    <action selector="Games:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LiL-62-wQJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bodie Shane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MV-MI-G5v">
+                                <rect key="frame" x="159" y="95" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4c-ih-T6H">
+                                <rect key="frame" x="175" y="472" width="64" height="30"/>
+                                <state key="normal" title="Robodics"/>
+                                <connections>
+                                    <action selector="ChangeToRobotic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mlw-VG-b7P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df4-be-dIh">
+                                <rect key="frame" x="187" y="510" width="41" height="30"/>
+                                <state key="normal" title="Camp"/>
+                                <connections>
+                                    <action selector="ChangeToCamp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gMQ-MV-GP4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66Y-eA-SM1">
+                                <rect key="frame" x="184" y="608" width="47" height="30"/>
+                                <state key="normal" title="School"/>
+                                <connections>
+                                    <action selector="ChangingToCooking:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9W-KB-W9h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4O-Fo-df2">
+                                <rect key="frame" x="180" y="564" width="55" height="30"/>
+                                <state key="normal" title="cooking"/>
+                                <connections>
+                                    <action selector="ChangeToCooking:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BXg-YU-7OU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="i9B-7t-FiX" kind="presentation" identifier="ToCamp" id="se3-se-EWW"/>
+                        <segue destination="cH5-Ur-6cS" kind="presentation" identifier="ToGame" id="Lya-md-Feh"/>
+                        <segue destination="QyS-e4-UsQ" kind="presentation" identifier="ToRobotic" id="1ec-D2-zwz"/>
+                        <segue destination="R69-hv-6MC" kind="presentation" identifier="ToCooking" id="h4c-Wi-vq6"/>
+                        <segue destination="4nI-cU-oBE" kind="presentation" identifier="ToSchool" id="cQ6-Zt-ruY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235" y="435"/>
+        </scene>
+        <!--Games-->
+        <scene sceneID="kKr-mC-zV9">
+            <objects>
+                <viewController title="Games" id="cH5-Ur-6cS" customClass="GameViewControler" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aZz-c4-3Ua"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Lv-xz-FYI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ntf-qF-mbi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8e2-gp-Q6p">
+                                <rect key="frame" x="192" y="649" width="30" height="30"/>
+                                <state key="normal" title=" "/>
+                                <connections>
+                                    <action selector="BackStart:" destination="cH5-Ur-6cS" eventType="touchUpInside" id="i7l-55-jhF"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2hM-ki-vSJ">
+                                <rect key="frame" x="107" y="404" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">  huge gamer I played games all the time growing up. To prove how much I am a geek I am missing 2 achievements on Skyrim. So that’s what I do with my free time.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="eU4-sU-0Tb">
+                                <rect key="frame" x="136" y="124" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="087-2V-W8f">
+                                <rect key="frame" x="153" y="585" width="108" height="30"/>
+                                <state key="normal" title="Back TO START"/>
+                                <connections>
+                                    <action selector="THEREALBACKTOSTART:" destination="cH5-Ur-6cS" eventType="touchUpInside" id="68N-1i-mJv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="GameToStart" id="ubj-Yb-Yoc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXr-FG-Ah5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="443"/>
+        </scene>
+        <!--Robotic-->
+        <scene sceneID="ywC-5B-Jfh">
+            <objects>
+                <viewController title="Robotic" id="QyS-e4-UsQ" customClass="GameViewControler" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p3c-GS-sN9"/>
+                        <viewControllerLayoutGuide type="bottom" id="prX-nD-8hi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JTj-Y7-Pef">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z2q-Y3-ow5">
+                                <rect key="frame" x="87" y="414" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">I joined robotic last year as a new student to school. I fell in love with the program after the first week. We ended up having the cheapest robot there but we still ended up in the top 50%. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="first_robotics" translatesAutoresizingMaskIntoConstraints="NO" id="UhI-zI-PS1">
+                                <rect key="frame" x="87" y="85" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xt-VZ-zDm">
+                                <rect key="frame" x="163" y="583" width="88" height="30"/>
+                                <state key="normal" title="Back to start">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="RoboticToStart:" destination="QyS-e4-UsQ" eventType="touchUpInside" id="FSh-Hh-NzD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="RoboticToStart" id="hzI-pk-ACz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v9v-rp-gpx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882" y="1287"/>
+        </scene>
+        <!--Camp-->
+        <scene sceneID="RvZ-ZY-FqF">
+            <objects>
+                <viewController title="Camp" id="i9B-7t-FiX" customClass="CampViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jHy-Do-PHm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sfa-UM-oWM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1fv-EO-NxC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xg1-Pm-O3w">
+                                <rect key="frame" x="163" y="614" width="88" height="30"/>
+                                <state key="normal" title="Back to start"/>
+                                <connections>
+                                    <action selector="CampToStart:" destination="i9B-7t-FiX" eventType="touchUpInside" id="fP8-Jp-k0R"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0gN-H3-GnX">
+                                <rect key="frame" x="87" y="299" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text"> I love camp. I am a camp consular up at Camp Tuttle. games are fun but is nice to get away from games and just enjoy the camp fire. That and get paid.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="url" translatesAutoresizingMaskIntoConstraints="NO" id="Lho-OW-Hb3">
+                                <rect key="frame" x="87" y="45" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="CampToStart" id="iZF-KU-Jps"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VUD-0Z-t6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-228" y="1537"/>
+        </scene>
+        <!--Cooking-->
+        <scene sceneID="Ndk-pO-jPX">
+            <objects>
+                <viewController title="Cooking" id="R69-hv-6MC" customClass="CookingViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kxw-lD-B1U"/>
+                        <viewControllerLayoutGuide type="bottom" id="buA-up-luo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CTC-7v-DsO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0K-Jv-iVV">
+                                <rect key="frame" x="162" y="610" width="90" height="30"/>
+                                <state key="normal" title="Back to Start"/>
+                                <connections>
+                                    <action selector="CookingToStart:" destination="R69-hv-6MC" eventType="touchUpInside" id="YSs-ub-PKc"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cooking" translatesAutoresizingMaskIntoConstraints="NO" id="tSa-Xp-X0I">
+                                <rect key="frame" x="87" y="39" width="240" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Oof-cx-Hem">
+                                <rect key="frame" x="92" y="400" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Took a food’s class last year. I cook with my dad once a week. My grandmother also comes by to cook with me and make some sweat desert.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="CookingToStart" id="XD5-F5-jrh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cm7-oG-9s2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="314" y="2439"/>
+        </scene>
+        <!--School-->
+        <scene sceneID="m73-Ud-Abm">
+            <objects>
+                <viewController title="School" id="4nI-cU-oBE" customClass="SchoolViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uGG-P0-4oo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zxt-fC-z1i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iHB-Ra-ITK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjG-xf-wE2">
+                                <rect key="frame" x="155" y="611" width="90" height="30"/>
+                                <state key="normal" title="Back to Start"/>
+                                <connections>
+                                    <action selector="SchoolToStart:" destination="4nI-cU-oBE" eventType="touchUpInside" id="dZL-Xj-oaE"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9MH-4W-afc">
+                                <rect key="frame" x="87" y="412" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text"> My mom is a teacher so I have always had help with my homework. I work hard in all my classes and some how managing to balance clubs on top of it. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images-1" translatesAutoresizingMaskIntoConstraints="NO" id="LFU-uo-o6y">
+                                <rect key="frame" x="87" y="78" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="SchoolToStart" id="YGy-nx-faH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nR2-DM-pQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866" y="2415"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cooking" width="534" height="356"/>
+        <image name="first_robotics" width="400" height="267"/>
+        <image name="images" width="300" height="168"/>
+        <image name="images-1" width="279" height="180"/>
+        <image name="url" width="294" height="171"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ubj-Yb-Yoc"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+</document>
